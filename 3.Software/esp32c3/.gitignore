@@ -3,3 +3,76 @@
 .vscode/c_cpp_properties.json
 .vscode/launch.json
 .vscode/ipch
+
+# Compiled Object files
+*.o
+*.ko
+*.obj
+*.elf
+*.lo
+*.d
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Libraries
+*.lib
+*.a
+*.la
+*.lo
+
+# Executables
+*.exe
+*.out
+*.app
+*.ihex
+*.hex
+*.bin
+*.elf
+
+# Debug files
+*.dSYM/
+*.su
+*.idb
+*.pdb
+*.mod*
+
+# CMake build
+/CMakeFiles
+/CMakeCache.txt
+/cmake_install.cmake
+/Makefile
+/build/
+out/
+
+# Generated files
+*.d
+*.so
+*.so.*
+*.dll
+*.dylib
+*.lib
+
+# Other
+*.dep
+*.gcda
+*.gcno
+*.gcov
+
+# Logs and databases
+*.log
+*.sql
+*.sqlite
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# User specific files
+*.user
+*.suo
+*.swp
+*.sln.docstates
+*.code-workspace
+config.h
