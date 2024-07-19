@@ -1,0 +1,16 @@
+{
+  "files.associations": {
+    "adafruit_sht4x.h": "c",
+    "array": "cpp",
+    "deque": "cpp",
+    "string": "cpp",
+    "unordered_map": "cpp",
+    "unordered_set": "cpp",
+    "vector": "cpp",
+    "string_view": "cpp",
+    "initializer_list": "cpp",
+    "arduino.h": "c",
+    "adafruit_gfx.h": "c",
+    "sht4x.h": "c"
+  }
+}
