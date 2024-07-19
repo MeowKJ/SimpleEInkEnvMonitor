@@ -10,6 +10,7 @@ public:
     SHT4xSensor();
     bool begin();
     void getTemperatureAndHumidity(sensors_event_t *humidity, sensors_event_t *temp);
+    void getTemperatureAndHumidityText(char *tempText, size_t tempTextSize, char *humidityText, size_t humidityTextSize, const char *format);
 
 private:
     Adafruit_SHT4x sht4;

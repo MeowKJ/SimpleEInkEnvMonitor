@@ -20,3 +20,11 @@ void SHT4xSensor::getTemperatureAndHumidity(sensors_event_t *humidity, sensors_e
 {
     sht4.getEvent(humidity, temp);
 }
+
+void SHT4xSensor::getTemperatureAndHumidityText(char *tempText, size_t tempTextSize, char *humidityText, size_t humidityTextSize, const char *format)
+{
+    sensors_event_t humidity, temp;
+    sht4.getEvent(&humidity, &temp);
+    snprintf(tempText, tempTextSize, format, temp.temperature);
+    snprintf(humidityText, humidityTextSize, format, humidity.relative_humidity);
+}
