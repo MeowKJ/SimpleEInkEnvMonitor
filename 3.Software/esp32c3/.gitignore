@@ -44,7 +44,6 @@
 /cmake_install.cmake
 /Makefile
 /build/
-out/
 
 # Generated files
 *.d
@@ -76,3 +75,9 @@ Thumbs.db
 *.sln.docstates
 *.code-workspace
 config.h
+
+# Tools generated files
+/6.Tools/generate_Weather_Iconfont/bdf/*
+/6.Tools/generate_Weather_Iconfont/code/*
+/6.Tools/u8g2FontTool/Output/*
+/6.Tools/u8g2FontTool/Fonts/*
