@@ -4,7 +4,7 @@
   Glyphs: 132/233
   BBX Build Mode: 0
 */
-#include "CustomFont.h"
+#include "CustomFonts.h"
 
 const uint8_t u8g2_font_qweather_icon_30[14647] U8G2_FONT_SECTION("u8g2_font_qweather_icon_30") =
     "\204\0\6\5\6\6\5\5\7+-\377\376\0\0\0\0\0\0\0\0\0\2\0\0\0\4\377\377\361\1t"

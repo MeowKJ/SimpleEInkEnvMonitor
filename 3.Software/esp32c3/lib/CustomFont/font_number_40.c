@@ -1,12 +1,12 @@
-
-#include "CustomFont.h"
-
 /*
   Fontname: -FreeType-SG05-Medium-R-Normal--55-400-100-100-P-316-ISO10646-1
   Copyright: (C) 2000 SHAKAGRAPHICS
   Glyphs: 94/98
   BBX Build Mode: 0
 */
+
+#include "CustomFonts.h"
+
 const uint8_t font_number_40[4703] U8G2_FONT_SECTION("font_number_40") =
     "^\0\5\6\6\6\1\6\7--\0\372'\372'\0\5\246\15\63\22B \6\0\20<\3!\24\321"
     "\31\264\202\37h\25\346\377W~`V\230+\77\320\2\42-\334\25\16\203\77\0+\206\302(\206\302("

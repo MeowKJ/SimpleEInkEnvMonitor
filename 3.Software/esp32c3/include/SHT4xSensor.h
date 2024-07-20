@@ -8,7 +8,7 @@ class SHT4xSensor
 {
 public:
     SHT4xSensor();
-    bool begin();
+    bool init();
     void getTemperatureAndHumidity(sensors_event_t *humidity, sensors_event_t *temp);
     void getTemperatureAndHumidityText(char *tempText, size_t tempTextSize, char *humidityText, size_t humidityTextSize, const char *format);
 

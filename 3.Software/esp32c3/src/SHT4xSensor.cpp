@@ -2,7 +2,7 @@
 
 SHT4xSensor::SHT4xSensor() : sht4() {}
 
-bool SHT4xSensor::begin()
+bool SHT4xSensor::init()
 {
     if (!sht4.begin())
     {
