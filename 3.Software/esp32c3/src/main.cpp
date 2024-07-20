@@ -3,6 +3,7 @@
 #include <WiFi.h>
 #include "EPaper.h"
 #include "SHT4xSensor.h"
+#include "Weather.h"
 
 SHT4xSensor sensor;
 EPaper epaper;
@@ -22,10 +23,21 @@ void setup()
 
 void loop()
 {
-  char tempText[10];
-  char humidityText[10];
-  sensor.getTemperatureAndHumidityText(tempText, sizeof(tempText), humidityText, sizeof(humidityText), "%.1f");
-  epaper.displayTemperatureHumidity(tempText, humidityText);
 
-  delay(10000); // 每10秒更新一次
+  for (int i = 100; i < 106; i++)
+  {
+    char tempText[5];
+    char humidityText[5];
+    char weatherIconText[5];
+
+    sensor.getTemperatureAndHumidityText(tempText, sizeof(tempText), humidityText, sizeof(humidityText), "%.1f");
+    Serial.printf("Temperature: %s, Humidity: %s\n", tempText, humidityText);
+
+    epaper.setTemperatureHumidity(tempText, humidityText);
+
+    epaper.setWeatherIcon(getWeatherIcon(i, true));
+    epaper.refreshDisplay();
+
+    delay(10000); // 每10秒更新一次
+  }
 }
