@@ -1,4 +1,4 @@
-![banner2.png](//image.lceda.cn/pullimage/K0EeVsrXQP3DfGwQLachQURisxiBrE7BQpEHVpgk.png)
+![banner2.png](https://image.lceda.cn/pullimage/K0EeVsrXQP3DfGwQLachQURisxiBrE7BQpEHVpgk.png)
 
 # **1、项目总览**
 
