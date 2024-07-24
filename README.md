@@ -13,8 +13,11 @@
 核心传感器食用的是盛思锐的SHT40传感器来采集温湿度数据，它具有高精度、低功耗和小尺寸的特点，非常适合用于各种环境监测应用。
 
 Github上存放了本项目所有的软件资源。  
+
 项目Github地址：[SimpleEInkEnvMonitor](https://github.com/MeowKJ/SimpleEInkEnvMonitor)
+
 OSWHub上面存放了硬件设计资源。
+
 项目OSWHHub地址：[小气象喵温湿度监测仪](https://oshwhub.com/kjpig/mini-sensor-board)
 
 
