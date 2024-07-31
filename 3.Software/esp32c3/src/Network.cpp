@@ -25,6 +25,11 @@ bool Network::connect(uint16_t timeout)
     return true;
 }
 
+void Network::disconnect()
+{
+    WiFi.disconnect();
+}
+
 String Network::httpGet(const char *url)
 {
     if (WiFi.status() == WL_CONNECTED)

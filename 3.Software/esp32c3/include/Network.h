@@ -9,6 +9,7 @@ class Network
 public:
     Network(const char *ssid, const char *password);
     bool connect(uint16_t timeout);
+    void disconnect();
     String getWeatherData(const char *apiKey, const char *cityCode);
     uint16_t getWeatherIcon(const char *apiKey, const char *cityCode);
 
