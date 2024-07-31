@@ -61,7 +61,8 @@ String Network::httpGet(const char *url)
 String Network::getWeatherData(const char *apiKey, const char *cityCode)
 {
     String url = String("https://api.seniverse.com/v3/weather/now.json?key=") + apiKey + "&location=" + cityCode + "&language=zh-Hans&unit=c";
-    Serial.printf("Requesting weather data");
+    Serial.println("Requesting weather data");
+    Serial.println(url);
     return httpGet(url.c_str());
 }
 

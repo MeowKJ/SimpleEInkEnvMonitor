@@ -39,7 +39,8 @@ bool updateWeather()
   struct tm timeinfo;
   configTime(GMT_OFFSET_SEC, DAYLIGHT_OFFSET_SEC, NTP_SERVER);
 
-  if (getLocalTime(&timeinfo))
+  Serial.println("Waiting for time");
+  if (getLocalTime(&timeinfo, 20000UL))
   {
     uint8_t week = timeinfo.tm_wday; // 获取星期几（0-6，0代表星期天）
     strcpy(weekText, getWeekText(week));
@@ -49,12 +50,13 @@ bool updateWeather()
   {
     Serial.println("Failed to obtain time");
   }
-  network.disconnect();
 
   // 更新墨水屏天气图标
   uint16_t weatherIconId = network.getWeatherIcon(WEATHER_API_KEY, WEATHER_LOCATION);
   Serial.printf("Weather Code: %d\n", weatherIconId);
   strcpy(weatherIconText, getWeatherIconText(weatherIconId, false));
+
+  network.disconnect();
 
   return true;
 }
