@@ -96,6 +96,7 @@ void EPaper::refreshDisplay()
 
         display.drawBitmap(tempSignX, tempSignY, gImage_a, 30, 30, fg);
         display.drawBitmap(humiditySignX, humiditySignY, gImage_b, 30, 30, fg);
+        display.drawBitmap(3, 80, bitmap_bytes_cat, 40, 40, red);
         display.fillRect(50, 0, 4, 122, red);
         display.fillRect(54, tempY + 8, 250, 4, red);
 
